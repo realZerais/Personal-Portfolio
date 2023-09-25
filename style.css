@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* ===========
+Typography 
+============== */
+@font-face {
+    font-family: lightPixel;
+    src: url(assets/light-pixel-7.regular.ttf);
+    /* https://www.1001fonts.com/light-pixel-7-font.html */
+}
+
+h1{
+    font-family: lightPixel;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0;
+    color: white;
+}
+
+h2{
+    font-family: lightPixel;
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+a{
+    color: white;
+    font-family: lightPixel;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* ===========
+Layout 
+============== */
+
+.navbar-container{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: black;
+    
+}
+
+.navbar-logo h1{
+    margin-left: 1rem;
+    color: white;
+}
+
+.navbar-logo a{
+
+    text-decoration: none;
+    padding: .25em 0;
+}
+.navbar-links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+.navbar-links li{
+    margin: 0 1rem;
+}
+.navbar-links a{
+    text-decoration: none;
+    padding: .25em 0;
+}
+.navbar-links a:hover{
+    color: rgb(171, 255, 255);
+}
+
+.home-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.icon-container{
+    height: 40vh;
+    width: 40vh;
+    min-height: 150px;
+    min-width: 150px;
+    border: solid;
+    border-radius: 100%;
+    background-image: url("assets/icon.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.content-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+
+}
+.content{
+    width: 20%;
+    height: 70vh;
+    background-color: aliceblue;
+}
+
+.skills-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    gap: 2rem;
+}
+
+.about-container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+.about-details{
+    background-color: rgb(21, 21, 21);
+    width: 100%;
+    height: 70vh;
+}
+
+
+

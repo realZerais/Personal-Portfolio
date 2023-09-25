@@ -6,7 +6,18 @@
 body{
     background-color: black;
 }
-
+/* ===========
+Canvas shits
+============== */
+#background-canvas{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
 /* ===========
 Typography 
 ============== */
@@ -49,7 +60,8 @@ Layout
     align-items: center;
     justify-content:space-evenly;
     background-color: black;
-    
+    z-index: 1;
+    position: relative;
 }
 
 .navbar-logo h1{
@@ -79,7 +91,10 @@ Layout
 .navbar-links a:hover{
     color: rgb(171, 255, 255);
 }
-
+.main-container{
+    z-index: 1;
+    position: relative;
+}
 .home-container{
     width: 100%;
     height: 100vh;

@@ -7,3 +7,8 @@
 // - portfolio cards then expand on lick
 // - skills progess bar 
 // - about
+// - scrollbar
+
+
+
+console.log("tesat")

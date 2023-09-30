@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #260C1A;
+    --secondary-color: #F05D23;
+    --tertiary-color: #C5D86D;
+    --background-color: #F7F7F2;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +16,9 @@ html{
 body{
     background-color: black;
 }
+::-webkit-scrollbar {
+    width: 1px;
+  }
 /* ===========
 Canvas shits
 ============== */
@@ -81,21 +91,25 @@ Layout
 .navbar-links ul{
     list-style-type: none;
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    margin-right: 2rem;
-
 }
 .navbar-links li{
     margin: 0 1rem;
 }
 .navbar-links a{
     text-decoration: none;
-    padding: .25em 0;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+    
 }
 .navbar-links a:hover{
-    color: rgb(171, 255, 255);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: .3em;
+
+    
 }
+
 .main-container{
     z-index: 0;
     position: relative;
@@ -136,9 +150,9 @@ Layout
 }
 .content-container{
     display: flex;
-    width: 85%;
+    width: 80%;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
     margin-bottom: 5rem;

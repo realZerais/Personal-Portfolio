@@ -3,7 +3,7 @@
 // - I am a ...
 // - sticky navbar then change color on scroll
 // - navbar scroll on click(done)*
-// - scroll animation
+// - scroll animation(done)
 // - portfolio cards then expand on lick
 // - skills progess bar 
 // - about
@@ -23,6 +23,8 @@ window.onscroll = function() {scrollFunction()};
 
 var navBar = document.querySelector(".navbar-container");
 
+// const target = document.querySelector(`[href='#${portfolio-section}']`).parentElement;
+const navItems = document.querySelectorAll('.nav-item');
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -33,4 +35,5 @@ function scrollFunction() {
     navBar.style.opacity = "1";
   }
 }
+
 

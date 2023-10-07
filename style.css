@@ -88,6 +88,7 @@ Layout
     text-decoration: none;
     padding: .25em 0;
 }
+
 .navbar-links ul{
     list-style-type: none;
     display: flex;
@@ -95,21 +96,26 @@ Layout
 }
 .navbar-links li{
     margin: 0 1rem;
+    
 }
-.navbar-links a{
+.nav-item a{
     text-decoration: none;
     padding: 0.5em 1em;
+    border-radius: .3em;
     transition: background-color 0.3s ease;
     
 }
-.navbar-links a:hover{
+.nav-item a:hover{
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border-radius: .3em;
-
-    
 }
-
+.active{
+            
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: .3em;
+}
 .main-container{
     z-index: 0;
     position: relative;
@@ -179,7 +185,7 @@ Layout
 
 .about-container{
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,7 +198,6 @@ Layout
 .about-details{
     background-color: rgb(21, 21, 21);
     width: 100%;
-    height: 70vh;
 }
 
 

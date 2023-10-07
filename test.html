@@ -3,43 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Active Navbar</title>
 </head>
-<style>
-    body{
-        height: 10000px;
-        position: relative;
-    }
-.test{
-    position: sticky;
-    background-color: cadetblue;
-    width: 40%;
-    height: 60vh;
-    top: 0;
-}
-</style>
 <body>
-    <progress min="0" max="100" value ="11">
-    </progress>
-    <progress min="0" max="100" value ="32">
-    </progress>
-    <progress min="0" max="100" value ="333">
-    </progress>
-    <progress min="0" max="100" value ="33">
-    </progress>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        /* Reset default margin and padding for the list and anchor tags */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-   
+nav {
+    background-color: #333; /* Default background color */
+}
 
-</progress>
+nav ul {
+    display: flex; /* Make the list horizontal */
+    justify-content: center; /* Center the list items horizontally */
+    align-items: center; /* Center the list items vertically */
+    height: 50px; /* Set the navbar height */
+}
 
-<script>
+nav li {
+    margin: 0 15px; /* Add spacing between list items */
+}
 
-</script>
+nav a {
+    text-decoration: none;
+    color: white; /* Text color */
+    padding: 10px 15px; /* Add padding to create clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Change background color on hover */
+nav a:hover {
+    background-color: #555; /* Hover background color */
+}
+
+/* Highlight the active link when clicked and visited */
+nav a:active,
+nav a:visited {
+    background-color: #777; /* Active background color */
+}
+
+    </style>
 </body>
-
-
-
-
-
 </html>

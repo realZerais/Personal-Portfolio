@@ -4,35 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrapped Div Example</title>
-    <style>
-        /* CSS for the wrapper div */
-        .wrapper {
-            background-color: #f0f0f0;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-        }
-
-        /* CSS for the inner content */
-        .content {
-            background-color: #fff;
-            padding: 10px;
-            border: 1px solid #999;
-            border-radius: 5px;
-        }
-    </style>
+    
 </head>
 <body>
-    <!-- Wrapped div -->
-    <div class="wrapper">
-        <h1>Wrapped Div Example</h1>
-        <p>This is a wrapped <code>&lt;div&gt;</code> with some content inside.</p>
-        <div class="content">
-            <h2>Inner Content</h2>
-            <p>This is the content inside the wrapped <code>&lt;div&gt;</code>.</p>
-        </div>
+    <div class="container">
+        <p class="text">
+            Typewriter CSS.
+        </p>
     </div>
+
+
+    <style>
+        .container{
+            display: inline-block;
+        }
+        .text{
+            font-size: 5em;
+            letter-spacing: 10px;
+            font-family: monospace;
+            border-right: 5px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 2s steps(15) infinite,
+                cursor .4s step-end infinite;
+        }
+
+        @keyframes cursor {
+            100%{
+                border-color: transparent
+            }
+            
+        }
+        @keyframes typing {
+            0%{
+                width: 100%;
+            }
+            100%{
+                width: 0%;
+            }
+        }
+        
+    </style>
+    <script>
+      
+
+    </script>
 </body>
 </html>

@@ -143,6 +143,76 @@ Layout
     background-position: center;
 }
 
+.details-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    
+}
+
+.static-text{
+    font-size: 1.2rem;
+    font-family: lightPixel;
+    color: white;
+   
+    
+}
+.dynamic-text{
+    color: white;
+    margin-left: 15px;
+    line-height: 1.4em;/**/
+    height: 1.5em;/**/
+    font-size: 1.2rem;/**/
+    overflow: hidden;
+    
+}
+.dynamic-text li{
+    top: 0;
+    font-size: 1em;/**/
+    font-family: lightPixel;
+    position: relative;
+    list-style: none;
+    white-space: nowrap;
+    color: var(--secondary-color);
+    animation: slide 12s steps(4) infinite;
+
+}
+@keyframes slide {
+    100%{
+        left: 0;/**/
+    }
+}
+
+.dynamic-text li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 1.5em;/**/      
+}
+.dynamic-text li span::after{
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--secondary-color);
+    animation: typing 3s steps(26) infinite;
+
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 0.5em);
+    
+    }
+    /* 100%{
+        left: 0;
+    } */
+}
+
+
+
 .portfolio-container{
     width: 100%;
     display: flex;

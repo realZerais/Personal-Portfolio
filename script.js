@@ -1,6 +1,6 @@
 // to do:
 // - interactive background
-// - I am a ...
+// - I am a ...(partly done)
 // - sticky navbar then change color on scroll(done)
 // - navbar scroll on click(done)
 // - scroll animation(done)

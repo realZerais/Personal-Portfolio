@@ -1,10 +1,10 @@
 // to do:
 // - interactive background
 // - I am a ...
-// - sticky navbar then change color on scroll
-// - navbar scroll on click(done)*
+// - sticky navbar then change color on scroll(done)
+// - navbar scroll on click(done)
 // - scroll animation(done)
-// - portfolio cards then expand on lick
+// - portfolio cards then expand on click
 // - skills progess bar 
 // - about
-// - scrollbar
+// - scrollbar(done)

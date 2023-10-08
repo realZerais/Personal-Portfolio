@@ -1,5 +1,3 @@
-console.log("test");
-
 var canvas = document.getElementById('background-canvas');
 var c = canvas.getContext('2d');
 canvas.width = window.innerWidth;

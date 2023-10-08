@@ -32,10 +32,19 @@
             <div class="icon-container">
                 <!-- <img src="assets/icon.jpg" alt="my face icon"> -->
             </div>
+            <div class="myName"><h1>DAVE SIAREZ</h1></div>
             <div class="details-container">
-                <h2 class="details">
-                    I am a ...
-                </h2>
+                <div class="static-text">
+                    I am
+                </div>
+                <div class="dynamic-text" id="text-list">
+                    <li><span>a Student</span></li>
+                    <li><span>an aspiring Web Developer</span></li>
+                    <li><span>an aspiring Game Developer</span></li>
+                    <li><span>an aspiring Loverboy</span></li>
+                </div>
+                    
+          
             </div>
 
         </div>
@@ -72,9 +81,79 @@
     </div>
 
     <style>
+        .details-container{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+        
+            
+        }
+    
+        .static-text{
+            font-size: 1.2rem;
+            font-family: lightPixel;
+            color: white;
+           
+            
+        }
+        .dynamic-text{
+            color: white;
+            margin-left: 15px;
+            line-height: 1.4em;/**/
+            height: 1.5em;/**/
+            font-size: 1.2rem;/**/
+            overflow: hidden;
+            
+        }
+        .dynamic-text li{
+            top: 0;
+            font-size: 1em;/**/
+            font-family: lightPixel;
+            position: relative;
+            list-style: none;
+            white-space: nowrap;
+            /* transition: opacity 0.5s; */
+            color: var(--secondary-color);
+            animation: slide 12s steps(4) infinite;
+
+        }
+        @keyframes slide {
+            100%{
+                top: -6em;/**/
+            }
+        }
+        
+        .dynamic-text li span{
+            position: relative;
+            margin: 5px 0;
+            line-height: 1.5em;/**/      
+        }
+        .dynamic-text li span::after{
+            left: 0;
+            content: "";
+            position: absolute;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            border-left: 2px solid var(--secondary-color);
+            animation: typing 3s steps(26) infinite;
+
+        }
+        @keyframes typing {
+            40%, 60%{
+                left: calc(100% + 0.5em);/**/
+            }
+            100%{
+                left: 0;
+            }
+        }
+    </style>
+    <script>
         
 
-    </style>
+
+    </script>
 
     <script src="background-canvas.js"></script>
     <script src="script.js"></script>

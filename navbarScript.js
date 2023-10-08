@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       navbarLinksEls.forEach((item) => {
           const section = document.querySelector(item.getAttribute("href"));
-          console.log(section.offsetTop);
+          // console.log(section.offsetTop);
           if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
               item.classList.add("active");
           }

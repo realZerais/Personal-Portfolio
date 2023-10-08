@@ -3,59 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Active Navbar</title>
+    <title>Wrapped Div Example</title>
+    <style>
+        /* CSS for the wrapper div */
+        .wrapper {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        /* CSS for the inner content */
+        .content {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <style>
-        /* Reset default margin and padding for the list and anchor tags */
-ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav {
-    background-color: #333; /* Default background color */
-}
-
-nav ul {
-    display: flex; /* Make the list horizontal */
-    justify-content: center; /* Center the list items horizontally */
-    align-items: center; /* Center the list items vertically */
-    height: 50px; /* Set the navbar height */
-}
-
-nav li {
-    margin: 0 15px; /* Add spacing between list items */
-}
-
-nav a {
-    text-decoration: none;
-    color: white; /* Text color */
-    padding: 10px 15px; /* Add padding to create clickable area */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-}
-
-/* Change background color on hover */
-nav a:hover {
-    background-color: #555; /* Hover background color */
-}
-
-/* Highlight the active link when clicked and visited */
-nav a:active,
-nav a:visited {
-    background-color: #777; /* Active background color */
-}
-
-    </style>
+    <!-- Wrapped div -->
+    <div class="wrapper">
+        <h1>Wrapped Div Example</h1>
+        <p>This is a wrapped <code>&lt;div&gt;</code> with some content inside.</p>
+        <div class="content">
+            <h2>Inner Content</h2>
+            <p>This is the content inside the wrapped <code>&lt;div&gt;</code>.</p>
+        </div>
+    </div>
 </body>
 </html>

@@ -127,9 +127,10 @@ Layout
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     margin-bottom: 10vh;
 }
+
 .icon-container{
     height: 40vh;
     width: 40vh;

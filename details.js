@@ -3,10 +3,10 @@ const messageEl = document.getElementById("message");
 
 let i = 1;
 const messages = [
-    "a Student",
-    "a Gamer",
-    "an aspiring Web Developer",
-    "an aspiring Game Developer"
+    "a Student 👨‍🎓",
+    "a Gamer 🎮",
+    "an aspiring Web Developer 🕸",
+    "an aspiring Game Developer 👨‍💻"
 ]
 animatedElement.addEventListener('animationiteration', () => {
     // console.log('Animation iteration completed');

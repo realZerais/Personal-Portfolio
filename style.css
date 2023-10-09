@@ -2,7 +2,9 @@
     --primary-color: #260C1A;
     --secondary-color: #F05D23;
     --tertiary-color: #C5D86D;
-    --background-color: #F7F7F2;
+    --accent-color: #F7F7F2;
+    --background-color: #000;
+    
 }
 
 *{
@@ -14,7 +16,7 @@ html{
 }
 
 body{
-    background-color: black;
+    background-color: var(--background-color);
 }
 ::-webkit-scrollbar {
     width: 1px;
@@ -45,22 +47,23 @@ h1{
     font-size: 1.5rem;
     font-weight: 200;
     margin: 0;
-    color: white;
+    color: var(--accent-color);
 }
 
 h2{
     font-family: lightPixel;
     font-size: 1.3rem;
     margin: 0;
-    color: white;
+    color: var(--accent-color);
 }
 
 a{
-    color: white;
+    color: var(--accent-color);
     font-family: lightPixel;
     font-size: 1rem;
     font-weight: 200;
 }
+
 
 /* ===========
 Layout 
@@ -82,7 +85,7 @@ Layout
     font-size: 1rem;
     font-weight: 200;
     margin-left: 3rem;
-    color: white;
+    color: var(--accent-color);
 }
 .navbar-logo a{
     text-decoration: none;
@@ -155,12 +158,12 @@ Layout
 .static-text{
     font-size: 1.2rem;
     font-family: lightPixel;
-    color: white;
+    color: var(--accent-color);
    
     
 }
 .dynamic-text{
-    color: white;
+    color: var(--accent-color);
     margin-left: 15px;
     line-height: 1.4em;/**/
     height: 1.5em;/**/
@@ -234,11 +237,6 @@ Layout
     gap: 1rem;
     margin-bottom: 5rem;
 
-}
-.content{
-    width: 20%;
-    height: 70vh;
-    background-color: aliceblue;
 }
 
 .skills-container{

@@ -3,50 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wrapped Div Example</title>
+    <title>TESTEST</title>
     
 </head>
 <body>
-    <div class="container">
-        <p class="text">
-            Typewriter CSS.
-        </p>
+    <div  class="asdsad">
+        <h2 open>OPEN MODAL</h2>
     </div>
-
+    
+    <dialog modal>
+        <div>MODAL TEST</div>
+        <button data-close-modal>CLOSE</button>
+        <!-- Dialog Content -->
+    </dialog>
 
     <style>
-        .container{
-            display: inline-block;
+        body{
+            height: 10000px;
         }
-        .text{
-            font-size: 5em;
-            letter-spacing: 10px;
-            font-family: monospace;
-            border-right: 5px solid;
-            white-space: nowrap;
-            overflow: hidden;
-            animation:
-                typing 2s steps(15) infinite,
-                cursor .4s step-end infinite;
-        }
-
-        @keyframes cursor {
-            100%{
-                border-color: transparent
-            }
-            
-        }
-        @keyframes typing {
-            0%{
-                width: 100%;
-            }
-            100%{
-                width: 0%;
-            }
-        }
-        
     </style>
     <script>
+        const openButton = document.querySelector("[open]");
+        const closeButton = document.querySelector ("[data-close-modal]");
+        const modal = document.querySelector("[modal]");
+        
+        openButton.addEventListener("click", () => {
+            modal.showModal();
+        })
+
+        closeButton.addEventListener("click", () => {
+            modal.close();
+        })
+
+        modal.addEventListener("click", e => {
+            const dialogDimensions = modal.getBoundingClientRect()
+            if (
+                e.clientX < dialogDimensions.left ||
+                e.clientX > dialogDimensions.right ||
+                e.clientY < dialogDimensions.top ||
+                e.clientY > dialogDimensions.bottom
+            ) {
+                modal.close()
+            }
+        })
+
       
 
     </script>

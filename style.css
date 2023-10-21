@@ -258,7 +258,8 @@ Layout
     margin-bottom: 5rem;
 }
 .portfolio-card {
-    max-width: 300px;
+    width: 20%;
+    height: 65vh;
     border-radius: 0.5rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -271,6 +272,7 @@ Layout
 
 .portfolio-card a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .portfolio-card-content {
@@ -300,7 +302,7 @@ Layout
 
 .portfolio-card-action {
     display: inline-flex;
-    margin-top: 1rem;
+    margin-top: 4rem;
     color: #ffffff;
     font-size: 0.875rem;
     line-height: 1.25rem;

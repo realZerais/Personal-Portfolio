@@ -8,12 +8,32 @@
 </head>
 <body>
     <div  class="asdsad">
-        <h2 open>OPEN MODAL</h2>
+        <h2 onclick="modal1.showModal()">OPEN MODAL1</h2>
     </div>
-    
-    <dialog modal>
-        <div>MODAL TEST</div>
-        <button data-close-modal>CLOSE</button>
+    <div  class="asdsad">
+        <h2 onclick="modal2.showModal()">OPEN MODAL2</h2>
+    </div>
+
+    <div  class="asdsad">
+        <a onclick="modal3.showModal()">OPEN MODAL3</a>
+    </div>
+
+
+    <dialog modal1>
+        <div>MODAL TEST 1</div>
+        <button onclick="modal1.close()">CLOSE</button>
+        <!-- Dialog Content -->
+    </dialog>
+
+    <dialog modal2>
+        <div>MODAL TEST 2</div>
+        <button onclick="modal2.close()">CLOSE</button>
+        <!-- Dialog Content -->
+    </dialog>
+
+    <dialog modal3>
+        <div>MODAL TEST 3</div>
+        <button onclick="modal3.close()">CLOSE</button>
         <!-- Dialog Content -->
     </dialog>
 
@@ -22,32 +42,46 @@
             height: 10000px;
         }
     </style>
+
     <script>
+
         const openButton = document.querySelector("[open]");
         const closeButton = document.querySelector ("[data-close-modal]");
-        const modal = document.querySelector("[modal]");
-        
-        openButton.addEventListener("click", () => {
-            modal.showModal();
-        })
+        const modal1 = document.querySelector("[modal1]");
+        const modal2 = document.querySelector("[modal2]");
+        const modal3 = document.querySelector("[modal3]");
+        const modals = [modal1, modal2, modal3];
 
-        closeButton.addEventListener("click", () => {
-            modal.close();
-        })
+        // openButton.addEventListener("click", () => {
+        //     modal.showModal();
+        // })
 
-        modal.addEventListener("click", e => {
-            const dialogDimensions = modal.getBoundingClientRect()
-            if (
-                e.clientX < dialogDimensions.left ||
-                e.clientX > dialogDimensions.right ||
-                e.clientY < dialogDimensions.top ||
-                e.clientY > dialogDimensions.bottom
-            ) {
-                modal.close()
-            }
-        })
+        // closeButton.addEventListener("click", () => {
+        //     modal.close();
+        // })
 
-      
+
+        //close modals
+        modals.forEach(element => {
+            console.log(element);
+            // let e=0;
+            // console.log(modals[e]);
+            // e++;
+            // console.log(e);
+
+            element.addEventListener("click", e => {
+                const dialogDimensions =
+                element.getBoundingClientRect()
+                if (
+                    e.clientX < dialogDimensions.left ||
+                    e.clientX > dialogDimensions.right ||
+                    e.clientY < dialogDimensions.top ||
+                    e.clientY > dialogDimensions.bottom
+                ) {
+                    element.close()
+                }
+            })
+        });
 
     </script>
 </body>

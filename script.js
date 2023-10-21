@@ -8,3 +8,4 @@
 // - skills progess bar 
 // - about
 // - scrollbar(done)
+// - responsive design

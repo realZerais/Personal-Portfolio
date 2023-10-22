@@ -18,7 +18,7 @@ var minCircleRadius;
 
 
 var circleArray = [];
-var entNum = 100;
+var entNum = 50;
 
 
 var setColor = false;
@@ -36,7 +36,7 @@ window.addEventListener('mousemove',
     }
 )
 
-function spawn100(){
+function spawn(){
     for(var i = 0; i < entNum; i++){
             
             x = (Math.random() * window.innerWidth) + (circleRadius*2); //add margin to x- upon spawning
@@ -106,18 +106,18 @@ function Circle(x, y, xVelocity, yVelocity, color, circleRadius, _minCircleRadiu
             
             //console.log(xVelocity);
             //interactivity
-            if(mouse.x - this.x < 50 && mouse.x - this.x > -50 &&
-                    mouse.y - this.y < 50 && mouse.y - this.y > -50){//50 represents the distance of the mouse and the circle/object
+        //     if(mouse.x - this.x < 50 && mouse.x - this.x > -50 &&
+        //             mouse.y - this.y < 50 && mouse.y - this.y > -50){//50 represents the distance of the mouse and the circle/object
                             
-                    if(this.circleRadius < maxCircleRadius){
-                            this.circleRadius +=1;
-                    }
+        //             if(this.circleRadius < maxCircleRadius){
+        //                     this.circleRadius +=1;
+        //             }
                     
                    
-            }
-            else if (this.circleRadius > this.minCircleRadius){
-                    this.circleRadius -= 1;
-            }
+        //     }
+        //     else if (this.circleRadius > this.minCircleRadius){
+        //             this.circleRadius -= 1;
+        //     }
             
             // else{
             //         this.cir
@@ -148,4 +148,4 @@ function animation(){
 
 
 animation();
-spawn100();
+spawn();

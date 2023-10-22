@@ -235,7 +235,7 @@ Layout
     margin-bottom: 5rem;
 }
 .portfolio-container h2{
-    margin-top: 5.5rem;
+    margin-top: 7rem;
 }
 
 .portfolio-card-wrapper{
@@ -258,8 +258,8 @@ Layout
     margin-bottom: 5rem;
 }
 .portfolio-card {
-    width: 20%;
-    height: 65vh;
+    width: 300px; 
+    height: 450px;
     border-radius: 0.5rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -280,10 +280,12 @@ Layout
 }
 
 .portfolio-card-image {
-    object-fit: cover;
-    width: 100%;
+    
+    width: 90%;
     height: 150px;
-    background-color: rgb(239, 205, 255);
+    margin: auto;
+    margin-top: 1rem;
+    background-color: rgb(155, 154, 154);
 }
 
 .portfolio-card-title {
@@ -312,6 +314,9 @@ Layout
     background-color: var(--secondary-color);
     padding: 4px 8px;
     border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    
 }
 
 .portfolio-card-action span {
@@ -323,10 +328,48 @@ Layout
     transform: translateX(4px);
 }
 
-/* =============
-       Card-Modal
+    /* =============
+        Card-Modal
     ================ */
-
+.card-modal-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: auto;
+}
+.card-modal{
+    height: 80vh;
+    width: 75%;
+    margin: auto;
+    margin-top: 7%;  
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;    
+    overflow-y: auto;
+    z-index: 5;
+}
+.card-modal h1{
+    color: var(--primary-color);
+    margin-top: 6rem;
+}
+.card-modal p{
+    margin-top: 4rem;
+}
+.card-modal-close-button{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    color: #888;
+    font-size: 50px;
+}
+.card-modal-close-button:hover {
+    color: var(--secondary-color); /* Change the color on hover, if desired */
+  }
 
 
 
@@ -343,7 +386,7 @@ Layout
     gap: 2rem;
 }
 .skills-container h2{
-    margin-top: 5.5rem;
+    margin-top: 7rem;
 }
 
 .about-container{
@@ -356,7 +399,7 @@ Layout
     gap: 2rem;
 }
 .about-container h2{
-    margin-top: 5.5rem;
+    margin-top: 7rem;
 }
 .about-details{
     background-color: rgb(21, 21, 21);

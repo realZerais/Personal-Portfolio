@@ -56,6 +56,17 @@ h2{
     margin: 0;
     color: var(--accent-color);
 }
+h3{
+    font-family: lightPixel;
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--accent-color);
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
 
 a{
     color: var(--accent-color);
@@ -341,9 +352,9 @@ Layout
 }
 .card-modal{
     height: 80vh;
-    width: 75%;
+    width: 80%;
     margin: auto;
-    margin-top: 7%;  
+    margin-top: 7em;  
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
     border-radius: 0.5rem;    
@@ -378,7 +389,6 @@ Layout
     ================ */
 .skills-container{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -386,25 +396,46 @@ Layout
     gap: 2rem;
 }
 .skills-container h2{
-    margin-top: 7rem;
+    margin-top: 5rem;
+}
+.skills-container h3{
+    margin-top: 4rem;
 }
 
-.about-container{
-    width: 100%;
-    height: 100vh;
+.progress-wrapper{
+    width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
-    gap: 2rem;
+    gap: 3rem;
 }
-.about-container h2{
-    margin-top: 7rem;
-}
-.about-details{
-    background-color: rgb(21, 21, 21);
+.progress-divider{
     width: 100%;
 }
+
+.progress-container {
+    width: 100%;
+    height: 25px;
+    background-color: #F7F7F2;
+    border-radius: 10px;
+    
+}
+
+.progress-bar {
+    width: 0;
+    height: 25px;
+    background-color: #F05D23;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* =============
+       ABOUT
+    ================ */
+
 
 
 

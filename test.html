@@ -3,86 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTEST</title>
-    
+
 </head>
 <body>
-    <div  class="asdsad">
-        <h2 onclick="modal1.showModal()">OPEN MODAL1</h2>
-    </div>
-    <div  class="asdsad">
-        <h2 onclick="modal2.showModal()">OPEN MODAL2</h2>
-    </div>
-
-    <div  class="asdsad">
-        <a onclick="modal3.showModal()">OPEN MODAL3</a>
+    <h1>Years of experience in a 5 years scale</h1>
+    <h2>HTML</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="entity1ProgressBar">0%</div>
     </div>
 
+    <h2>CSS</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="entity2ProgressBar">0%</div>
+    </div>
 
-    <dialog modal1>
-        <div>MODAL TEST 1</div>
-        <button onclick="modal1.close()">CLOSE</button>
-        <!-- Dialog Content -->
-    </dialog>
+    <h2>Javascript</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="entity3ProgressBar">0%</div>
+    </div>
 
-    <dialog modal2>
-        <div>MODAL TEST 2</div>
-        <button onclick="modal2.close()">CLOSE</button>
-        <!-- Dialog Content -->
-    </dialog>
+    <h2>PHP</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="entity4ProgressBar">0%</div>
+    </div>
 
-    <dialog modal3>
-        <div>MODAL TEST 3</div>
-        <button onclick="modal3.close()">CLOSE</button>
-        <!-- Dialog Content -->
-    </dialog>
+    <h2>Godot Engine/GDscript</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="entity5ProgressBar">0%</div>
+    </div>
 
     <style>
-        body{
-            height: 10000px;
+        .progress-container {
+            width: 80%;
+            background-color: #F7F7F2;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 30px;
+            background-color: #F05D23;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 10px;
         }
     </style>
-
     <script>
+        // Function to update a specific progress bar
+        function updateProgressBar(entityId, percent) {
+            const progressBar = document.getElementById(entityId + 'ProgressBar');
+            progressBar.style.width = percent + '%';
+            progressBar.innerHTML = percent + '%';
+        }
 
-        const openButton = document.querySelector("[open]");
-        const closeButton = document.querySelector ("[data-close-modal]");
-        const modal1 = document.querySelector("[modal1]");
-        const modal2 = document.querySelector("[modal2]");
-        const modal3 = document.querySelector("[modal3]");
-        const modals = [modal1, modal2, modal3];
-
-        // openButton.addEventListener("click", () => {
-        //     modal.showModal();
-        // })
-
-        // closeButton.addEventListener("click", () => {
-        //     modal.close();
-        // })
-
-
-        //close modals
-        modals.forEach(element => {
-            console.log(element);
-            // let e=0;
-            // console.log(modals[e]);
-            // e++;
-            // console.log(e);
-
-            element.addEventListener("click", e => {
-                const dialogDimensions =
-                element.getBoundingClientRect()
-                if (
-                    e.clientX < dialogDimensions.left ||
-                    e.clientX > dialogDimensions.right ||
-                    e.clientY < dialogDimensions.top ||
-                    e.clientY > dialogDimensions.bottom
-                ) {
-                    element.close()
-                }
-            })
-        });
-
+        // Example usage to update progress bars for five entities
+        updateProgressBar('entity1', 20);
+        updateProgressBar('entity2', 40);
+        updateProgressBar('entity3', 60);
+        updateProgressBar('entity4', 80);
+        updateProgressBar('entity5', 100);
     </script>
 </body>
 </html>

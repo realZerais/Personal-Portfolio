@@ -235,28 +235,101 @@
 
         <div class="skills-container" id="skills-section">
             <h2>SKILLS</h2>
-            <div class="progress-bar-container">
+            <h1>Years of experience on a 5-year scale</h1>
+            <div class="progress-wrapper">
+              <div class="progress-divider">
+                <h3>HTML</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="entity1ProgressBar">0%</div>
+                </div>
+            
+                <h3>CSS</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="entity2ProgressBar">0%</div>
+                </div>
+            
+                <h3>Javascript</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="entity3ProgressBar">0%</div>
+                </div>
+              </div>
+              
+              <div class="progress-divider">
+                <h3>PHP</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="entity4ProgressBar">0%</div>
+                </div>
+            
+                <h3>Godot Engine/GDscript</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="entity5ProgressBar">0%</div>
+                </div>
 
+                <h3>C++</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="entity6ProgressBar">0%</div>
+                </div>
+              </div>
+              
+
+              
             </div>
+
+            
+            
         </div>
 
         <div class="about-container" id="about-section">
-            <h2>ABOUT</h2>
+            <h2>ABOUT ME</h2>
             <div class="about-details">
+              <p>
+                Hi, I am Dave Jamil D. Siarez. I discovered coding when and my best friend in high school downloaded 
+                an AI app for fun out of boredom in class. The AI app won't do the commands that we wanted it to execute so, 
+                we tried to decipher how it is made. That's the time that I discovered this thing called "programming languages". 
+                Since then, 
+                I have been curious and fascinated about software development and how it is made, which sparked my passion for it.
+              </p>
+              <br>
+              <p>
+                I aspire to create meaningful software that will be useful for everyone and will positively affect our lives. 
+                Through that, I can have a sense of purpose in this world.
+              </p>
+
 
             </div>
+
         </div>
 
     </div>
 
 
 
-    <style>
+<style>
+.about-container{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5rem;
+}
+.about-container h2{
+    margin-top: 10rem;
+}
+.about-details{
+    width: 85%;
+}
+.about-details p{
+  line-height: 1.5;
+  text-indent: 5rem;
+}
+
         
-        
-    </style>
+</style>
 
     <script>
+
     </script>
 
     <script src="background-canvas.js"></script>
@@ -266,6 +339,7 @@
     <script src="scroll-anim.js"></script>
     <script src="details.js"></script>
     <script src="modals.js"></script>
+    <script src="progressBar.js"></script>
 
   
     
